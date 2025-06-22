@@ -3,7 +3,6 @@
 This repository contains two CLI tools written in Go:
 
 - **API Benchmark Tool**: Perform load testing on APIs or websites by sending concurrent HTTP requests.
-- **Portfolio CLI**: An interactive command-line portfolio showcasing your skills and projects.
 
 ---
 
@@ -19,7 +18,13 @@ go run main.go [command] [flags]
 
 
 ## Usage
+
+### Benchmark Tool (default command)
+```
 go run main.go --url https://httpbin.org/get --requests 100 --concurrency 10
+```
+
+### Flags:
 
 | Flag          | Shortcut | Description                  | Default |
 | ------------- | -------- | ---------------------------- | ------- |
@@ -28,7 +33,7 @@ go run main.go --url https://httpbin.org/get --requests 100 --concurrency 10
 | --concurrency | -c       | Number of concurrent workers | 10      |
 
 
-
+### Example output:
 ```
 Benchmark Results:
 Total Requests:       100
